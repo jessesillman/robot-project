@@ -4,7 +4,7 @@ Suite Setup    Open Browser To SwagLabs
 Suite Teardown    Close Browser
 
 *** Variables ***
-${URL}       file://${CURDIR}/../docs/swag_labs.html
+${URL}       https://jessesillman.github.io/robot-project/swag_labs.html
 ${BROWSER}   Chrome
 
 *** Test Cases ***
