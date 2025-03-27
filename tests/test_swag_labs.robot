@@ -5,7 +5,7 @@ Suite Teardown    Close Browser
 
 *** Variables ***
 ${URL}       https://jessesillman.github.io/robot-project/swag_labs.html
-${BROWSER}   Chrome
+${BROWSER}   headlesschrome
 
 *** Test Cases ***
 SwagLabs Checkout Flow
@@ -26,8 +26,6 @@ SwagLabs Checkout Flow
 
 *** Keywords ***
 Open Browser To SwagLabs
-    Open Browser    ${URL}    ${BROWSER}    options=add_argument(--headless)    options=add_argument(--no-sandbox)   
+    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    0.5s
-
-
