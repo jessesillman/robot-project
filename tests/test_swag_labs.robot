@@ -26,7 +26,7 @@ SwagLabs Checkout Flow
 
 *** Keywords ***
 Open Browser To SwagLabs
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${URL}    ${BROWSER}    options=add_argument(--headless)    options=add_argument(--no-sandbox)    options=add_argument(--disable-dev-shm-usage)
     Maximize Browser Window
     Set Selenium Speed    0.5s
 
