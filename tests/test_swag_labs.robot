@@ -30,3 +30,4 @@ Open Browser To SwagLabs
     Maximize Browser Window
     Set Selenium Speed    0.5s
 
+
